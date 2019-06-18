@@ -1,0 +1,12 @@
+
+<% content_for :div do %>
+ <ul class="nav flex-column">
+     <% if @brands!=nil %>
+     <% @brands.each do |brand| %>
+  <li class="nav-item">
+    <a class="nav-link" href="#"><%= brand.brand %></a>
+  </li>
+<% end %>
+     <% end %>
+</ul>
+<% end %>
